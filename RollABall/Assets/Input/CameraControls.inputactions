@@ -1,0 +1,64 @@
+{
+    "name": "CameraControls",
+    "maps": [
+        {
+            "name": "Camera Rotate",
+            "id": "3263b7c4-316d-4091-9385-d3890710dcb2",
+            "actions": [
+                {
+                    "name": "EnableRotateCamera",
+                    "type": "Button",
+                    "id": "61158477-fd0f-4490-b649-14107855b086",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RotateCamera",
+                    "type": "Value",
+                    "id": "18f5248c-26e2-474d-b91c-cbc21af8f2ad",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "85db28d2-225f-4093-a26e-99511e3da3fc",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Mouse",
+                    "action": "EnableRotateCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "59659f88-a084-4444-8ce6-e73112341526",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mouse",
+                    "action": "RotateCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Mouse",
+            "bindingGroup": "Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
